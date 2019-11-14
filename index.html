@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Weather App</title>
+    </head>
+    <body>
+
+        <header class="row">
+            <navbar class="navbar col-12">
+                <div class="logo">
+                    <a href="/">Weather App</a>
+                </div>
+            </navbar>
+        </header>
+
+        <section class="jumbotron row">
+            <form class="weather-form col-4">
+                <input type="text" placeholder="Podaj nazwę miasta" id="city">
+                <input type="text" placeholder="Podaj kod kraju" id="country">
+                <input type="submit" id="submit">
+            </form>
+            <div class='current-weather col-4'></div>
+        </section>
+        <footer>
+
+        </footer>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
