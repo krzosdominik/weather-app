@@ -1,2 +1,2 @@
 # weather-app
-Weather application
+Simple Weather application using jQuery, Sass, Ajax and OpenWeatherMap Api. Without RWD
