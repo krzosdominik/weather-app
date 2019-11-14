@@ -1,0 +1,103 @@
+@import "grid";
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:#4267B2;
+    height: 10%;
+    position: fixed;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding-left: 100px;
+    }
+}
+
+.jumbotron {
+    background: #E9EBEE;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .weather-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+
+        input {
+            border: none;
+            width: 100%;
+            background: #fff;
+            margin-bottom: 10px;
+            height: 3rem;
+            border-radius: 5px;
+
+            &:focus {
+                outline: none;
+                background-color: lightgray;
+              }
+        }
+
+        #submit {
+            width: 50%;
+            margin-top: 20px;
+            box-sizing: border-box;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            background: rgba(#4267B2, .5);
+            color: rgb(22, 82, 202);
+        }
+    }
+}
+
+.current-weather {
+    background: rgba(#4267B2, .5);
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bold_text{
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    position: absolute;
+    color: red;
+    
+}
+
+.city-error {
+    top: 200px;
+}
+
+.country-error {
+    top: 240px;
+}

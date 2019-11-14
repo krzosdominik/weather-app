@@ -1,0 +1,9 @@
+$column: 12;
+
+.row {
+    @for $i from 1 through $column {
+      .col-#{$i} {
+        width: 100% / $column * $i;
+      }
+    }
+  }
